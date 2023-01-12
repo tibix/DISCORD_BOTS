@@ -45,6 +45,7 @@ def get_video_title(video):
 
     return title
 
+
 def get_top_10_comments(video):
     url = f"https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId={video}&key={API_KEY}"
     json_url = requests.get(url)

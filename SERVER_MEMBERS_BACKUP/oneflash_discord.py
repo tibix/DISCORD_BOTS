@@ -3,14 +3,14 @@ from discord.ext import commands
 from discord.ext.commands import Bot
 from yt_data import get_top_10_videos, get_video_title, get_last_10_videos, get_top_10_channel_comments
 
-intents = discord.Intents.default()
+intents = discord.Intents.all()
 intents.presences = True 
 intents.members = True
 
 BOT_PREFIX = ("!")
 bot = commands.Bot(command_prefix=BOT_PREFIX, intents=intents)
 
-TOKEN = 'OTM1ODMzMjc1MDY1MzI3NjQ2.YfEYpw.tvKBnSFVAIzTuP9Pm2hxo734bG4'
+TOKEN = 'OTM1ODMzMjc1MDY1MzI3NjQ2.G_Xsn8.RS3DhnOSx0Ou-0J6XkX8UslxDaEC-_phQL5-pw'
 
 # log to the console when bot is logged in
 @bot.event
